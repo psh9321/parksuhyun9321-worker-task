@@ -6,7 +6,6 @@ export default defineConfig({
     splitting: false,
     sourcemap: false,
     clean: true,
-    external: ["react"],
     outDir: "dist",
     dts : true,
     outExtension({ format }) {
