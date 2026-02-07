@@ -43,5 +43,5 @@ function WorkerTask(callback) {
   return { PostMessage };
 }
 export {
-  WorkerTask
+  WorkerTask as default
 };
