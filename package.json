@@ -2,9 +2,6 @@
   "name": "@parksuhyun9321/worker-task",
   "version": "1.0.4",
   "description": "",
-  "main": "dist/index.cjs",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
   "scripts": {
     "test": "pnpm vitest run",
     "build": "pnpm tsup"
@@ -15,7 +12,7 @@
   ],
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
+      "types": "./dist/index.d.cts",
       "import": "./dist/index.mjs",
       "require": "./dist/index.cjs"
     }
