@@ -1,6 +1,6 @@
 {
   "name": "@parksuhyun9321/worker-task",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "",
   "scripts": {
     "test": "pnpm vitest run",
