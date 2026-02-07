@@ -20,7 +20,7 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // index.ts
 var index_exports = {};
 __export(index_exports, {
-  default: () => WorkerTask
+  WorkerTask: () => WorkerTask
 });
 module.exports = __toCommonJS(index_exports);
 function WorkerTask(callback) {
@@ -66,3 +66,7 @@ function WorkerTask(callback) {
   }
   return { PostMessage };
 }
+// Annotate the CommonJS export names for ESM import in node:
+0 && (module.exports = {
+  WorkerTask
+});

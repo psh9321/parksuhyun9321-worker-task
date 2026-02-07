@@ -1,5 +1,5 @@
-export default function WorkerTask<T>(callback: (data: any) => Promise<T>) {
-    function PostMessage(...arg : any[]): Promise<T> {
+export function WorkerTask(callback: (data: any) => void) {
+    function PostMessage<T>(...arg : any[]): Promise<T> {
 
         const param = arg.length === 1 && !Array.isArray(arg[0]) && typeof arg[0] === "object" ? arg[0] : arg
 
