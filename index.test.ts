@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest"
-import { WorkerTask } from "./index"
+import WorkerTask from "./index"
 
 class MockWorker {
   onmessage: ((e: MessageEvent) => void) | null = null
