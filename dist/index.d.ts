@@ -1,5 +1,5 @@
-declare function WorkerTask(callback: (data: any) => void): {
-    PostMessage: <T>(...arg: any[]) => Promise<T>;
+declare function WorkerTask<K, T>(callback: (data: K) => void): {
+    PostMessage: (...arg: K[]) => Promise<T>;
 };
 
 export { WorkerTask as default };
